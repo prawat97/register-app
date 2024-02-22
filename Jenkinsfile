@@ -54,7 +54,7 @@ pipeline {
                }
            }
         } 
-        stage("Build $ push Docker Iamge"){
+        stage("Build & push Docker Iamge"){
            steps {
                script {
                     docker.withRegistry('',DOCKER_PASS) {
